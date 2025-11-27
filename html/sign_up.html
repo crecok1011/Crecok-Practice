@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원 가입</title>
+</head>
+<body>
+  <h1>회원 가입</h1>
+  <form method="post" action="">
+    <fieldset>
+      <legend>필수 정보</legend>
+      <ul>
+        <li>
+          <label>ID : <input type="text" id="uid" size="10"></label>
+          <input type="button" value="중복 확인">
+        </li>
+        <li>
+          <label>비밀번호 : <input type="password" id="upw1" size="10"></label>
+        </li>
+        <li>
+          <label>비밀번호 확인 : <input type="password" id="upw2" size="10"></label>
+        </li>
+        <li>
+          <label>이메일 : <input type="email" id="umail"></label>
+        </li>
+        <li>
+          <label>주소 : <input type="text" id="addr1"></label>
+          <input type="button" value="주소 검색"><br>
+          <label>상세 주소 <input type="text" id="addr2"></label>
+        </li>
+        <li>
+          <label>전화번호 : <input type="tel" id="phone"></label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>부가 정보</legend>
+      <ul>
+        <li>
+          <p>관심사</p>
+          <input type="checkbox" name="concern" value="game">게임
+          <input type="checkbox" name="concern" value="travel">여행
+          <input type="checkbox" name="concern" value="sports">스포츠
+          <input type="checkbox" name="concern" value="movie">영화
+        </li>
+        <li>
+          <p>방문 경로</p>
+          <input type="radio" name="course" value="search">검색
+          <input type="radio" name="course" value="friend">지인 소개
+          <input type="radio" name="course" value="ad">광고
+          <input type="radio" name="course" value="etc">기타
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>
