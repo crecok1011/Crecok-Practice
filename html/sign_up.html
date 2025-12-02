@@ -12,16 +12,6 @@
       <legend>필수 정보</legend>
       <ul>
         <li>
-<<<<<<< HEAD
-          <label>ID : <input type="text" id="uid" autofocus placeholder="4~10자 사이, 공백 없이"></label>
-          <input type="button" value="중복 확인">
-        </li>
-        <li>
-          <label>비밀번호 : <input type="password" id="upw1" placeholder="문자와 숫자, 특수 기호 포함"></label>
-        </li>
-        <li>
-          <label>비밀번호 확인 : <input type="password" id="upw2"></label>
-=======
           <label>ID : <input type="text" id="uid" autofocus placeholder="4~10자 사이, 공백 없이" required></label>
           <input type="button" value="중복 확인">
         </li>
@@ -30,7 +20,6 @@
         </li>
         <li>
           <label>비밀번호 확인 : <input type="password" id="upw2" required></label>
->>>>>>> 1357338 (회원 가입 폼 수정)
         </li>
         <li>
           <label>이메일 : <input type="email" id="umail" required></label>
@@ -41,11 +30,11 @@
           <label>상세 주소 <input type="text" id="addr2"></label>
         </li>
         <li>
-<<<<<<< HEAD
-          <label>전화번호 : <input type="tel" id="phone" placeholder="하이픈 없이 (01012345678)"></label>
-=======
           <label>전화번호 : <input type="tel" id="phone" placeholder="하이픈 없이 (01012345678)" required></label>
->>>>>>> 1357338 (회원 가입 폼 수정)
+        </li>
+        <li>
+          <label for="ment">하고싶은 말</label><br>
+          <textarea id="ment" cols="40" rows="4"></textarea>
         </li>
       </ul>
     </fieldset>
@@ -54,10 +43,12 @@
       <ul>
         <li>
           <p>관심사</p>
-          <input type="checkbox" name="concern" value="game">게임
-          <input type="checkbox" name="concern" value="travel">여행
-          <input type="checkbox" name="concern" value="sports">스포츠
-          <input type="checkbox" name="concern" value="movie">영화
+          <select>
+            <option value="game" selected>게임</option>
+            <option value="movie">영화</option>
+            <option value="sports">스포츠</option>
+            <option value="travel">여행</option>
+          </select>
         </li>
         <li>
           <p>방문 경로</p>
@@ -69,8 +60,8 @@
       </ul>
     </fieldset>
     <div>
-      <input type="submit" value="가입하기">
-      <input type="reset" value="초기화">
+      <button type="submit">가입하기</button>
+      <button type="reset">초기화</button>
     </div>
   </form>
 </body>
