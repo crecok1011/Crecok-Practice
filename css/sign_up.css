@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 h1 {
-  color: blue;
+  font-family: "Jua", sans-serif;
+  color: rgb(0, 0, 172);
   text-align: center;
 }
 legend {
