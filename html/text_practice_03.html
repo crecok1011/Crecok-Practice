@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>inherit vs match-parent 데모</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+/* 부모: RTL + text-align:end(=left) */
+.parent {
+  direction: ltr;
+  text-align: end; /* end → rtl에서는 왼쪽 */
+  border: 2px solid #000;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* 자식 1: inherit → 부모의 최종값(left)을 그대로 받음 */
+.child1 {
+  text-align: inherit; 
+}
+.child1-1 {
+  text-align: inherit;
+}
+/* 자식 2: match-parent → 부모의 end를 기준으로 다시 계산 → ltr에서는 end = right */
+.child2 {
+  text-align: inherit;
+}
+.child1-2 {
+  direction: rtl;
+  text-align: match-parent;
+}
+</style>
+</head>
+<body>
+
+<div class="parent">
+  <strong>부모: RTL + text-align:end(=left)</strong>
+
+  <div class="child1">
+    <strong>child1 (inherit) → 실제 정렬: left</strong><br>
+    텍스트가 왼쪽에 정렬됩니다.
+    <div class="child1-1">반갑다.</div>
+  </div>
+
+  <div class="child2">
+    <strong>child2 (match-parent) → 실제 정렬: right</strong><br>
+    텍스트가 오른쪽에 정렬됩니다.
+    <div class="child1-2">안녕?</div>
+  </div>
+
+</div>
+
+</body>
+</html>
