@@ -3,6 +3,9 @@ h1 {
   font-family: "Jua", sans-serif;
   color: rgb(0, 0, 172);
   text-align: center;
+  line-height: 50px;
+  text-shadow: 0px 0px 10px skyblue;
+  letter-spacing: 0.1em;
 }
 legend {
   font-weight: 700;
