@@ -10,3 +10,6 @@ h1 {
 legend {
   font-weight: 700;
 }
+.square {
+  list-style: square;
+}
