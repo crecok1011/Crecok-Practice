@@ -13,3 +13,6 @@ legend {
 .square {
   list-style: square;
 }
+.shadow {
+  box-shadow: 0px 0px 5px 1px;
+}
