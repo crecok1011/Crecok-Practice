@@ -10,6 +10,10 @@ h1 {
 legend {
   font-weight: 700;
 }
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
 .square {
   list-style: square;
 }
@@ -24,4 +28,16 @@ legend {
   border: 1px solid #ccc;
   border-radius: 15px;
   box-shadow: 0 0 3px 1px;
+}
+.chatBotImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px 1px #111;
+}
+.chatBot {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
