@@ -14,8 +14,8 @@ legend {
   width: 400px;
   margin: 0 auto;
 }
-.square {
-  list-style: square;
+li {
+  list-style-image: url('../image/circle-check-solid-full.svg');
 }
 .buttonGroup {
   width: 230px;
