@@ -11,11 +11,20 @@ legend {
   font-weight: 700;
 }
 .container {
-  width: 400px;
+  width: 470px;
   margin: 0 auto;
 }
 li {
   list-style-image: url('../image/circle-check-solid-full.svg');
+  margin-bottom: 5px;
+}
+.ment {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+textarea {
+  width: 172px;
 }
 .buttonGroup {
   width: 230px;
@@ -40,4 +49,11 @@ li {
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+form label {
+  display: inline-block;
+  width: 120px;
+}
+.ment label {
+  width: 124px;
 }

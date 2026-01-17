@@ -15,28 +15,35 @@
         <legend>필수 정보</legend>
           <ul class="square">
             <li>
-              <label>ID : <input type="text" id="uid" autofocus placeholder="4~10자 사이, 공백 없이" required></label>
+              <label for="uid">ID</label>
+              <input type="text" id="uid" autofocus placeholder="4~10자 사이, 공백 없이" required>
               <input type="button" value="중복 확인">
             </li>
             <li>
-              <label>비밀번호 : <input type="password" id="upw1" placeholder="문자와 숫자, 특수 기호 포함" required></label>
+              <label for="upw1">비밀번호</label>
+              <input type="password" id="upw1" placeholder="문자와 숫자, 특수 기호 포함" required>
             </li>
             <li>
-              <label>비밀번호 확인 : <input type="password" id="upw2" required></label>
+              <label for="upw2">비밀번호 확인</label>
+              <input type="password" id="upw2" required>
             </li>
             <li>
-              <label>이메일 : <input type="email" id="umail" required></label>
+              <label for="umail">이메일</label>
+              <input type="email" id="umail" required>
             </li>
             <li>
-              <label>주소 : <input type="text" id="addr1" required></label>
+              <label for="addr1">주소</label>
+              <input type="text" id="addr1" required>
               <input type="button" value="주소 검색"><br>
-              <label>상세 주소 <input type="text" id="addr2"></label>
+              <label for="addr2">상세 주소</label>
+              <input type="text" id="addr2">
             </li>
             <li>
-              <label>전화번호 : <input type="tel" id="phone" placeholder="하이픈 없이 (01012345678)" required></label>
+              <label for="phone">전화번호</label>
+              <input type="tel" id="phone" placeholder="하이픈 없이 (01012345678)" required>
             </li>
-            <li>
-              <label for="ment">하고싶은 말</label><br>
+            <li class="ment">
+              <label for="ment">하고싶은 말</label>
               <textarea id="ment" cols="40" rows="4"></textarea>
             </li>
           </ul>
