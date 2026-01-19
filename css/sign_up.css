@@ -57,3 +57,8 @@ form label {
 .ment label {
   width: 124px;
 }
+form input[type=text], input[type=password], input[type=email], input[type=tel] {
+  border: 1px solid rgb(255, 153, 153);
+  padding: 3px;
+  border-radius: 3px;
+}
