@@ -38,6 +38,13 @@ textarea {
   border-radius: 15px;
   box-shadow: 0 0 3px 1px;
 }
+.twoButton:hover {
+  background-color: #222;
+  color: #fff;
+}
+.twoButton:active {
+  background-color: red;
+}
 .chatBotImg {
   width: 80px;
   height: 80px;
