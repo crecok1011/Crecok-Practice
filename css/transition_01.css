@@ -20,6 +20,7 @@ h1 {
 img {
   width: 300px;
   height: 200px;
+  margin-bottom: 20px;
 }
 .photo-intro {
   position: absolute;
@@ -32,7 +33,7 @@ img {
   transition: 1s ease;
 }
 .gallery-frame .gallery-slot:hover .photo-intro {
-  transform: translateY(-135px);
+  transform: translateY(-155px);
   opacity: 1;
 }
 .photo-intro h2, .photo-intro p {
