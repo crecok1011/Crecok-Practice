@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>기본 입출력 연습</title>
+  <title>자바스크립트 연습장</title>
 </head>
 <body>
   <script>
-    let name = prompt("이름을 입력해주세요.");
-    document.write('<b>' + name + '</b>님, 환영합니다.');
-    console.log(name + "님 반갑습니다.");
+    // 반지름 값을 입력받고 원의 넓이를 구하는 출력하는 프로그램
+    const PI = 3.14;
+    let radius = prompt("반지름 값을 입력해주세요.");
+    let area = PI * radius * radius;
+
+    document.write("입력하신 반지름 값은 <b>" + radius + "</b>입니다.<br>");
+    document.write("원의 넓이는 " + area + "입니다.");
   </script>
 </body>
 </html>
