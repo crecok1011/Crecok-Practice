@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수 기초 02</title>
+</head>
+<body>
+  <script>
+    // 값(n)을 입력받아 1부터 n까지의 합을 반환하는 프로그램
+    function addNumber(n) {
+      let sum = 0;
+      for (let i=1; i<=n; i++) {
+        sum += i;
+      }
+      return sum;
+    }
+    let userNumber = prompt('얼마까지 더할까요?');
+    if (userNumber !== null) {
+      let result = addNumber(parseInt(userNumber));
+      document.write(`1부터 ${userNumber}까지의 합은 ${result}`);
+    } else {
+      document.write('취소되었습니다.');
+    }
+  </script>
+</body>
+</html>
