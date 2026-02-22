@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 01</title>
+</head>
+<body>
+  <script>
+    // 두 수를 입력받아 크기를 서로 비교하여 더 큰 숫자를 알림 창에 표시하기
+    let num1 = parseInt(prompt('비교할 첫 번째 숫자'));
+    let num2 = parseInt(prompt('비교할 두 번째 숫자'));
+
+    function compNum(a, b) {
+      if(a > b) {
+        alert(`${a}(이)가 ${b}보다 큽니다.`);
+      } else if (b > a) {
+        alert(`${b}(이)가 ${a}보다 큽니다.`);
+      } else {
+        alert('두 수가 같습니다.');
+      }
+    }
+
+    compNum(num1, num2);
+  </script>
+</body>
+</html>
