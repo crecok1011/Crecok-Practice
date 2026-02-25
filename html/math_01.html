@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math 객체 연습 01</title>
+</head>
+<body>
+  <script>
+    let member = prompt('전체 응모자 수');
+
+    let pick = Math.floor((Math.random() * member) + 1)
+    document.write(`<p>전체 응모자 수 : ${member}</p>`);
+    document.write(`<p>당첨자 : ${pick}번</p>`);
+  </script>
+</body>
+</html>
