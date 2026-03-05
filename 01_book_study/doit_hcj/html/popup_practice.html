@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업 연습</title>
+</head>
+<body onload="popup()">
+  <script>
+    // 현재 시간을 나타내는 팝업창(가로 500, 세로 400)을 화면 가운데 띄우기
+    // 팝업이 차단된 브라우저일 경우 알림창 띄우기
+    function popup() {
+      let left = (screen.availWidth - 500) / 2;
+      let top = (screen.availHeight - 180) / 2;
+      let opt = `left=${left}, top=${top}, width=500, height=180`;
+
+      let popScreen = window.open('popup_time.html', 'pop', opt);
+      if(popScreen == null) {
+        alert('팝업이 차단되어 있습니다.');
+      }
+    }
+  </script>
+</body>
+</html>

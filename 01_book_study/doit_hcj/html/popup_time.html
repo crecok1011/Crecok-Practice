@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업창</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    .container {
+      border: 2px double rgb(66, 184, 231);
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    #timeArea {
+      color: rgb(0, 82, 189);
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>현재 시각</p>
+    <p id="timeArea">가나다라</p>
+  </div>
+  <button onclick="window.close()">닫기</button>
+  <script>
+    setInterval(timeSet, 1000);
+
+    function timeSet() {
+      let now = new Date();
+      let nowTime = now.toLocaleTimeString();
+      document.querySelector('#timeArea').innerHTML = nowTime;
+    }
+  </script>
+</body>
+</html>
