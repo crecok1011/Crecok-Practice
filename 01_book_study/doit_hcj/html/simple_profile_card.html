@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클릭 시 변하는 프로필 카드</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 400px;
+      border: 1px solid #222;
+      border-radius: 10px;
+      text-align: center;
+      padding: 5px 5px;
+    }
+    #nickname {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .crecok {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>▼ 이미지를 클릭하세요 ▼</p>
+    <img src="../assets/images/gray_profile_400.png" id="profileImage" alt="프로필 이미지">
+    <p id="nickname">닉네임 보기 (클릭)</p>
+  </div>
+  <script>
+    let imgChange = document.querySelector('#profileImage');
+    let nameChange = document.querySelector('#nickname');
+    imgChange.onclick = () => imgChange.src = "../assets/images/yellow_profile_400.png";
+    nameChange.onclick = () => nameChange.innerHTML = '<span class="crecok">Crecok</span>';
+  </script>
+</body>
+</html>
