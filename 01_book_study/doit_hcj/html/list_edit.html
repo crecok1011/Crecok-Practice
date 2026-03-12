@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리스트 목록 추가/삭제하기</title>
+  <link rel="stylesheet" href="../css/list_edit.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Study Book List</h1>
+    <p class="createGuide">추가할 책 이름을 입력하고 <strong>[추가]</strong> 버튼을 클릭하세요.</p>
+    <form action="">
+      <label for="inputBook"></label>
+      <input type="text" id="inputBook" placeholder="추가할 책 이름을 입력하세요." autofocus>
+      <button>추가</button>
+    </form>
+    <p class="deleteGuide">목록을 삭제하려면 <strong>각 리스트 항목</strong>을 클릭하세요.</p>
+    <div class="bookListContainer">
+      <h3>리스트 목록</h3>
+      <ul class="bookList">
+      </ul>
+    </div>
+  </div>
+  <script src="../js/list_edit.js"></script>
+</body>
+</html>

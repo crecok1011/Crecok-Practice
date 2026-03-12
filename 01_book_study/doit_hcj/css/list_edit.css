@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 30px;
+  border: 2px solid #222;
+  border-radius: 10px;
+}
+.bookListContainer {
+  width: 345px;
+  margin: 10px auto;
+  border: 1px solid #222;
+  border-radius: 10px;
+  background-color: rgb(223, 240, 255);
+}
+h1 {
+  margin-bottom: 20px;
+}
+h3 {
+  margin: 5px auto;
+  color: blue;
+}
+.createGuide {
+  margin-bottom: 10px;
+}
+.deleteGuide {
+  margin-top: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+}
+#inputBook {
+  width: 260px;
+  padding: 5px;
+}
+button {
+  width: 80px;
+  padding: 3px 0;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+}
