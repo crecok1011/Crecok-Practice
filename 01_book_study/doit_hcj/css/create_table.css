@@ -1,0 +1,20 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inputSize {
+  width: 30px;
+}
+.createTableButton {
+  margin-left: 20px;
+}
+table {
+  width: 500px;
+  border: 1px solid #222;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #222;
+  padding: 15px;
+}
