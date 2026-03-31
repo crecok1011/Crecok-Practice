@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>do..while문 예제</title>
+  <link rel="stylesheet" href="../css/centerText.css">
+</head>
+<body>
+  <script>
+    // while 문으로 조건에 따라 별 표시하기
+    let stars = parseInt(prompt("별의 개수를 입력하세요."));
+    
+    do {
+      document.write('*');
+      stars--;
+      // while(stars)로 한다면 위 과정에서 stars = -1이 되므로 while이 true가 되어 무한 반복하게 됨 (주의!)
+    } while(stars > 0);
+  </script>
+</body>
+</html>

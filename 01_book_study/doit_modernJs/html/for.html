@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열값 가져오기</title>
+  <link rel="stylesheet" href="../css/centerText.css">
+</head>
+<body>
+  <script>
+    // for문을 사용해 배열값 가져오기
+    const students = ["Park", "Kim", "Lee", "Kang"];
+
+    for(let i=0; i<students.length; i++) {
+      document.write(`${students[i]}. `);
+    }
+    document.write('<br>');
+    
+    // forEach 문을 사용해 배열값 가져오기
+    const colors = ["red", "orange", "yellow", "green", "blue"];
+    
+    colors.forEach(function(color) {
+      document.write(`${color}. `);
+    });
+    document.write('<br>');
+    
+    // for...in 문을 사용해 키와 값 가져오기
+    const pen = {
+      size : 0.5,
+      color : "검정",
+      type : "볼펜"
+    };
+    for(key in pen) {
+      document.write(`${key} : ${pen[key]} <br>`);
+    }
+    
+    // for...in 문을 사용해 배열의 값 가져오기
+    const coffee = ["아메리카노", "에스프레소", "돌체라떼", "카페라떼"];
+    
+    for(key in coffee) { // coffee 객체의 key 만큼 반복하라.
+      document.write(`${coffee[key]}. `);
+    }
+    document.write('<br>');
+
+    // for...of 문을 사용해 배열의 값 가져오기
+    const animals = ["쥐", "소", "호랑이", "토끼"];
+    
+    for (animal of animals) { // animals의 animal이 있는 만큼 반복하라.
+      document.write(`${animal}. `);
+    }
+  </script>
+</body>
+</html>
