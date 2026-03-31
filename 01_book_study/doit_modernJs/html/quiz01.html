@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퀴즈01</title>
+  <link rel="stylesheet" href="../css/centerText.css">
+</head>
+<body>
+  <script>
+    // 주어진 배열에서 10보다 큰 숫자 찾기
+    document.write('주어진 배열에서 10보다 큰 수만 찾기<br>');
+    const numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+    
+    for (key in numbers) {
+      if (numbers[key] > 10) {
+        document.write(`${numbers[key]}. `);
+      }
+    }
+    document.write('<br>');
+    
+    // 1보다 큰 수를 입력한 후 입력한 숫자까지 짝수만 더하기
+    document.write('주어진 수에서 짝수만 더하기<br>');
+    const inputNumber = prompt("1보다 큰 숫자를 입력하세요.");
+    let sum = 0;
+
+    if (inputNumber !== null) {
+      for (let i=1; i<=parseInt(inputNumber); i++) {
+        if (i % 2 === 0) {
+          sum += i;
+          document.write(`${i} ---- ${sum}<br>`);
+        }
+      }
+    } else {
+      alert("취소를 선택했습니다.");
+    }
+  </script>
+</body>
+</html>
