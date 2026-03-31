@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학점 계산하기</title>
+</head>
+<body>
+  <script>
+    // 학점 계산하기
+    // let score = parseInt(prompt("프로그래밍 점수를 입력하세요.")) - 이걸 사용하면 [취소]를 누를 경우 score 변수에 NaN이 들어가게 된다.
+    let score = prompt("프로그래밍 점수를 입력하세요.");
+
+    if (score !== null) {
+      if (parseInt(score) >= 90) {
+        alert("A 학점");
+      } else if (parseInt(score) >= 80) {
+        alert("B 학점");
+      } else {
+        alert("C학점");
+      }
+    }
+  </script>
+</body>
+</html>
