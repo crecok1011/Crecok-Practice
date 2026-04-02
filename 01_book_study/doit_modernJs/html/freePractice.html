@@ -7,6 +7,21 @@
 </head>
 <body>
   <script>
+    // 익명 함수의 선언 및 실행
+    let sum = function(a, b) {
+      return a + b;
+    }
+    console.log(`두 수의 합 실행 결과 : ${sum(10, 20)}`);
+
+    // 즉시 실행 함수
+    (function(num1, num2) {
+      let sum = num1 * num2;
+      console.log(`두 수의 곱 실행 결과 : ${sum}`);
+    }(2, 5));
+
+    // 화살표 함수
+    let division = (num1, num2) => num1 / num2;
+    console.log(`두 수의 나누기 실행 결과 : ${division(30, 10)}`);
   </script>
 </body>
 </html>
