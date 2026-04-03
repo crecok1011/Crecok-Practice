@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수에서 콜백 함수 정의하고 실행하기</title>
+  <link rel="stylesheet" href="../../css/centerText.css">
+  <style>
+    button {
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+<body>
+  <button>버튼</button>
+  <script>
+    let bttn = document.querySelector("button");
+
+    bttn.addEventListener("click", () => {
+      alert("클릭했습니다.");
+    });
+  </script>
+</body>
+</html>
