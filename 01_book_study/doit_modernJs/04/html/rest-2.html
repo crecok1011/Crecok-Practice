@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인수의 일부분만 나머지 매개변수로 받기</title>
+</head>
+<body>
+  <script>
+    function displayFavorite(first, ...favors) {
+      console.log(`가장 좋아하는 과일은 ${first}입니다.`);
+      console.log(`그 외 과일은 ${favors}입니다`);
+    }
+
+    displayFavorite("사과", "포도", "토마토");
+  </script>
+</body>
+</html>
