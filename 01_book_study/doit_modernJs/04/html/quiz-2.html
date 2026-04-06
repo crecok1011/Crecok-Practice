@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>두 수의 최대공약수 구하기</title>
+</head>
+
+<body>
+  <script>
+    function commonDivisor(num1, num2) {
+      let min = num1 > num2 ? num2 : num1;
+      let divisor = 0;
+
+      for (let i = 1; i <= min; i++) {
+        if ((num1 % i === 0) && (num2 % i === 0)) {
+          divisor = i;
+        }
+      }
+      return divisor;
+    }
+
+    let num1 = parseInt(prompt("첫 번째 숫자를 입력하세요."));
+    let num2 = parseInt(prompt("두 번째 숫자를 입력하세요."));
+    console.log(`두 수의 최대 공약수는 ${commonDivisor(num1, num2)}입니다.`);
+  </script>
+</body>
+
+</html>
