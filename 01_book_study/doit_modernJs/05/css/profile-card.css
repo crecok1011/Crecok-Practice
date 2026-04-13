@@ -21,6 +21,14 @@ p {
 .user {
   color: blueviolet;
 }
+.clicked {
+  background-color: yellow;
+  color: blue;
+}
+.blue-italic {
+  font-style: italic;
+  color: blue;
+}
 img {
   width: 100px;
 }
