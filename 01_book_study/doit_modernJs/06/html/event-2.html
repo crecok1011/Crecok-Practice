@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼을 클릭했을 때 배경색이 변화</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <button>버튼 클릭</button>
+  <script>
+    // 버튼을 더블클릭 했을 때 배경색이 변화
+    const bttn = document.querySelector("button");
+    bttn.ondblclick = () => {
+      document.body.style.backgroundColor = "green";
+    }
+  </script>
+</body>
+</html>
