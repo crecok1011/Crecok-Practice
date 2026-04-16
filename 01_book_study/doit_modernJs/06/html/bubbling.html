@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 버블링</title>
+  <link rel="stylesheet" href="../css/event.css">
+</head>
+<body>
+  <!-- 각 영역을 클릭했을 때 콘솔창에서 이벤트 버블링 발생 결과 확인 -->
+  BODY
+  <div onclick="console.log('div')">
+    DIV
+    <section onclick="console.log('section')">
+      SECTION
+      <p onclick="console.log('p')">P</p>
+    </section>
+  </div>
+</body>
+</html>

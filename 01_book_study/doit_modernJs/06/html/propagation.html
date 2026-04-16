@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 버블링</title>
+  <link rel="stylesheet" href="../css/event.css">
+</head>
+<body>
+  BODY
+  <div onclick="console.log('div')">
+    DIV
+    <section onclick="console.log('section')">
+      SECTION
+      <p onclick="console.log('p')">P</p>
+    </section>
+  </div>
+  <script>
+    // 이벤트 객체의 target 프로퍼티와 currentTarget 프로퍼티의 차이점 확인
+    const elements = document.querySelectorAll('*');
+
+    for(let element of elements) {
+      element.addEventListener("click", e => {
+        console.log(`event.target : ${e.target.tagName}, event.currentTarget : ${e.currentTarget.tagName}`);
+      });
+    }
+  </script>
+</body>
+</html>

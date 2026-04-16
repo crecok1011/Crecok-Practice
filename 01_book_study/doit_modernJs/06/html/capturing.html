@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 캡처링</title>
+  <link rel="stylesheet" href="../css/event.css">
+</head>
+<body>
+  BODY
+  <div onclick="console.log('div')">
+    DIV
+    <section onclick="console.log('section')">
+      SECTION
+      <p onclick="console.log('p')">P</p>
+    </section>
+  </div>
+  <script>
+    // 각 영역을 클릭했을 때 콘솔창에서 이벤트 캡처링 발생 결과 확인
+    const elements = document.querySelectorAll('*');
+
+    for(let element of elements) {
+      element.addEventListener("click", e => {
+        console.log(`event.target : ${e.target.tagName}, event.currentTarget : ${e.currentTarget.tagName}`);
+      }, true);
+    }
+  </script>
+</body>
+</html>
