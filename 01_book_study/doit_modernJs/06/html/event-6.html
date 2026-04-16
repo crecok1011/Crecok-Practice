@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>click 이벤트 발생 시 클릭 위치 알아내기</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    #box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #222;
+      border-radius: 5%;
+    }
+  </style>
+</head>
+<body>
+  <p>사각형 내부를 클릭해 보세요</p>
+  <div id="box"></div>
+  <script>
+    // 이벤트 객체를 이용해 click 이벤트 발생 시 클릭 위치 알아내기
+    const box = document.querySelector("#box");
+
+    box.addEventListener("click", (e) => {
+      alert(`이벤트 발생 위치 : ${e.pageX}, ${e.pageY}`);
+    });
+  </script>
+</body>
+</html>
