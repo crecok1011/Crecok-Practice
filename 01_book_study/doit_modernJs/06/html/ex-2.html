@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener 예제</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .convert {
+      background-color: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- 버튼을 클릭했을 때 배경색과 글자색을 토글로 변경 -->
+  <p>버튼을 클릭하면 배경색과 글자색이 바뀝니다.</p>
+  <button>Click</button>
+  <script>
+    const bttn = document.querySelector("button");
+    const body = document.body;
+    bttn.addEventListener("click", () => {
+      body.classList.toggle("convert");
+    });
+  </script>
+</body>
+</html>

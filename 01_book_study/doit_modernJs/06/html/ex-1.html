@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경색 반전</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <button>배경 색 반전</button>
+  <p>안녕하세요? 반갑습니다.</p>
+  <script>
+    // 버튼을 누르면 배경색과 글자색이 변경
+    // 함수를 직접 생성 수 요소에 연결하는 방식 연습
+    const bttn = document.querySelector("button");
+
+    function changeDark() {
+      document.body.style.backgroundColor = "#222";
+      document.body.style.color = "#fff";
+    }
+
+    bttn.onclick = changeDark;
+  </script>
+</body>
+</html>
