@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러 항목 중 클릭한 항목 삭제하기</title>
+</head>
+<body>
+  <h1>Web Programming</h1>
+  <ul id="items">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+  <script>
+    // 부모 노드를 찾고 부모 노드의 자식 노드를 제거
+    const items = document.querySelectorAll("li");
+    for(item of items) {
+      item.addEventListener("click", function() {
+        this.parentNode.removeChild(this);
+      });
+    }
+  </script>
+</body>
+</html>

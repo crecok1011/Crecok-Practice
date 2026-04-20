@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목 클릭해서 삭제하기</title>
+</head>
+<body>
+  <h1>Web Programming</h1>
+  <ul id="items">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+  <script>
+    // 요소.remove()를 이용해 제목을 클릭하여 삭제하기
+    const title = document.querySelector("h1");
+    title.addEventListener("click", () => {
+      title.remove();
+    });
+  </script>
+</body>
+</html>
