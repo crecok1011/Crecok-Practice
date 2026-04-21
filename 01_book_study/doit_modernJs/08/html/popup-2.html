@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업 창 띄우기 - (2)</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <button>팝업 창 열기</button>
+  <script>
+    // 버튼을 누르면 지정한 위치에 지정한 크기의 팝업창 띄우기
+    function openPopup() {
+      window.open("notice.html", "이벤트팝업", "width=600, height=500, left=300, top=200");
+    }
+    const bttn = document.querySelector("button");
+    bttn.onclick = openPopup;
+  </script>
+</body>
+</html>
