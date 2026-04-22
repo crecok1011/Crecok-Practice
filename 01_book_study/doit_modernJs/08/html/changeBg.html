@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배경 이미지를 무작위로 변경하기</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    body {
+      background-image: url('../images/bg-1.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    h1 {
+      padding: 20px 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      box-shadow: 1px 2px 2px #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>문서를 다시 불러오세요.</h1>
+  <!-- Math.random() 메서드를 이용해 배경 이미지를 무작위로 변경하기 -->
+  <script src="../js/changeBg.js"></script>
+</body>
+</html>
