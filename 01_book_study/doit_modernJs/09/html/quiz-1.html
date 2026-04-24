@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스 만들고 메서드 실행하기</title>
+</head>
+<body>
+  <script>
+    class Pet {
+      constructor(name, color) {
+        this.name = name;
+        this.color = color;
+      }
+      run = function() {
+        alert(`${this.name} is running`);
+      }
+    }
+
+    let puppy = new Pet("꿀밤", "brown");
+    puppy.run();
+  </script>
+</body>
+</html>
