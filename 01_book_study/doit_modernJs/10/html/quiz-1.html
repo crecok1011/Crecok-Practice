@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열의 마지막 요소로 요소들의 합을 추가하기</title>
+  <style>
+    #container {
+      width: 500px;
+      margin: 20px auto;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    table, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td {
+      padding: 5px 10px;
+      font-size: 1.5em;
+    }
+    #result td:last-child {
+      background-color: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>주어진 배열 : [2, 4, 6, 8, 10]</h1>
+    <hr>
+    <h1>원래 배열</h1>
+    <div id="origin"></div>
+
+    <h1>모든 값을 더한 배열</h1>
+    <div id="result"></div>
+  </div>
+  <script>
+    const origin = document.querySelector("#origin");
+    const result = document.querySelector("#result");
+
+    function showArray(array, origin, result) {
+      let tdOrigin = ``;
+      let tdResult = ``;
+      let sum = 0;
+
+      array.forEach(number => {
+        tdOrigin += `<td>${number}</td>`;
+        sum += number;
+      });
+      origin.innerHTML = `<table><tr>${tdOrigin}</tr></table>`;
+
+      array.push(sum);
+      array.forEach(number => {
+        tdResult += `<td>${number}</td>`;
+      });
+      result.innerHTML = `<table><tr>${tdResult}</tr></table>`;
+    }
+
+    showArray([2, 4, 6, 8, 10], origin, result);
+  </script>
+</body>
+</html>
