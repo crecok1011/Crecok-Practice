@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>throw 문으로 오류 메시지 만들기</title>
+</head>
+<body>
+  <script>
+    let json = '{"grade" : 3, "age" : 25}';
+
+    try {
+      let user = JSON.parse(json);
+      if(!user.name) {
+        throw "사용자 이름이 없습니다.";
+      }
+    } catch(err) {
+      console.error(err);
+    }
+  </script>
+</body>
+</html>
