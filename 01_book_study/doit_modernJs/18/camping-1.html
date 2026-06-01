@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공공데이터포털 API 자료 가져오기</title>
+</head>
+<body>
+  <script>
+    var url = "http://apis.data.go.kr/B551011/GoCamping/basedList?serviceKey=c6c502786d816a0dffa6a130aa38829831169141c631873c53a05e58999b43d0&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=TestApp&_type=json";
+    fetch(url)
+    .then(result => result.json())
+    .then(json => {
+      // console.log(json);
+      const data = json.response.body.items.item;
+      console.log(data);
+    });
+  </script>
+</body>
+</html>
